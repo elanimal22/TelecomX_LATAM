@@ -5,6 +5,10 @@ Este proyecto forma parte del desafío de análisis de datos en **Telecom X**, c
 El análisis permitirá generar **insights estratégicos** para la empresa y sentar la base para futuros **modelos predictivos**.
 
 ---
+│## ESTRUCTURA
+├── TelecomX_LATAM.ipynb # Cuaderno principal con todo el flujo ETL + EDA + informe
+├── TelecomX_Data.json # Dataset con los datos de clientes (fuente original)
+└── README.md # Documentación del proyecto
 
 ## 🚀 Objetivos del proyecto
 - Importar y manipular datos desde una fuente JSON (simulación de API).
@@ -39,6 +43,33 @@ El análisis permitirá generar **insights estratégicos** para la empresa y sen
      - Servicios adicionales (seguridad online, soporte técnico) reducen el churn.
      - Contratos de 1 y 2 años muestran mayor retención.
      - Métodos de pago automáticos se asocian a menor churn.
+
+---
+
+## 📊 Ejemplos de gráficos e insights obtenidos
+
+### Gráficos generados:
+1. **Distribución de churn vs no-churn** (gráfico de barras).  
+2. **Churn según tipo de contrato** (contrato mes a mes muestra mayor churn).  
+3. **Boxplot de cargos mensuales vs churn** (clientes con cargos más altos cancelan más).  
+4. **Mapa de correlación de variables numéricas**.
+
+### Insights principales:
+- Los clientes con contrato **mes a mes** son los que más cancelan.  
+- A mayor **cargos mensuales**, mayor probabilidad de churn.  
+- Servicios adicionales como **seguridad online y soporte técnico** reducen la tasa de churn.  
+- Contratos a **1 y 2 años** muestran mayor retención que contratos mensuales.  
+- Métodos de pago **automáticos** (débito automático, transferencia) están asociados con menor churn.
+
+---
+
+## ⚙️ Instrucciones de ejecución
+
+### Requisitos
+- Python 3.10+ (o Google Colab).
+- Librerías necesarias:
+  ```bash
+  pip install pandas matplotlib seaborn
 
 ---
 
